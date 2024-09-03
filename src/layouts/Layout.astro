@@ -1,0 +1,128 @@
+---
+import Header  from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import '@fontsource-variable/onest'
+import { ViewTransitions } from 'astro:transitions'
+
+interface Props {
+	title: string
+	description: string
+}
+
+import { getLangFromUrl } from '../i18n/utils'
+const { description, title } = Astro.props
+const lang = getLangFromUrl(Astro.url);
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+		<link rel="icon" href="/logo-fime.ico" />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<Header />
+		<slot />
+		<Footer />
+		<style is:global>
+			:root {
+				color-scheme: dark;
+				--entry-animation: -20px;
+				--cover-animation: 20px;
+			}
+
+			@media (min-width: 1400px) {
+				:root {
+				--entry-animation: -100px;
+				--cover-animation: 100px;
+				}
+			}
+			html {
+				font-family: 'Onest Variable', sans-serif;
+				background: #0061358c;
+				color: rgba(255, 255, 255);
+			}
+			#intro {
+				display: flex;
+				width: auto;
+				height: auto;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				min-height: 100vh;
+				background-image: linear-gradient(
+					rgba(0,0,0,0.8),
+					rgba(0,0,0,0.8)),
+				url(/img/fime-fachada.png);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+			}
+			.title-description {
+				font-weight: 700;
+			}
+			p {
+				margin-top: 1%;
+				line-height: 1.4;
+				font-weight: 100;
+				color: rgba(255, 255, 255, 0.845);
+			}
+			p strong {
+				color: #fff;
+				font-size: 1em;
+				font-weight: 700;
+			}
+		
+			#header-nav {
+				animation: blur linear both;
+				animation-timeline: scroll();
+				animation-range: 0 700px;
+			}
+			@keyframes blur {
+				to {
+					box-shadow: 
+						0px 5px 50px -5px hsl(0, 0%, 0, 0.1),
+						0px 0px 0px 1px hsl(0, 0%, 0, 0.1);
+					background-color: rgba(0, 0, 0, 0.3);
+					backdrop-filter: blur(10px);
+				}
+			}
+			footer {
+				background-color: #13151a
+			}
+			#intro-marco {
+				display: flex;
+				width: auto;
+				height: auto;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				min-height: 100vh;
+				background-image: linear-gradient(
+					rgba(0,0,0,0.8),
+					rgba(0,0,0,0.8)),
+				url(/public/img/gettyimages-154932300-2048x2048.jpg);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+			}
+			.text__glowing {
+				transition: text-shadow 0.3s ease;
+			}
+			.text__glowing:hover {
+				text-shadow:
+				1px 1px 15px #fff;
+			}
+		</style>
+	<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</body>
+</html>
