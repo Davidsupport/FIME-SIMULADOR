@@ -1,0 +1,144 @@
+---
+import { getI18N } from "../../i18n";
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<div class="h-screen w-screen mx-auto text-pretty mt-16 mb-0 py-4 px-4 flex justify-center items-start">
+    <div class="flex flex-col items-center w-full max-w-3xl bg-gray-900 rounded-3xl px-6 py-6">
+        <h1 class="text-2xl font-bold text-white mb-6 text-center">Simulador de Reflexión y Refracción</h1>
+        <div class="flex flex-col md:flex-row w-full">
+            <div class="w-full md:w-1/3 px-4">
+                <form class="mb-6">
+                    <label for="medium1" class="block mb-2 text-sm font-medium text-white text-center">Seleccione el Medio 1</label>
+                    <select id="medium1" class="bg-gray-700 border border-gray-600 text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-900 dark:border-gray-800 dark:placeholder-gray-500 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value="300000">Vacío</option>
+                        <option value="299910">Aire</option>
+                        <option value="225564">Agua</option>
+                        <option value="220588">Etanol</option>
+                        <option value="205479">Cuarzo</option>
+                        <option value="197368">Vidrio crown</option>
+                        <option value="186335">Vidrio flint</option>
+                        <option value="123967">Diamante</option>
+                    </select>
+                </form>
+                <form class="mb-6">
+                    <label for="medium2" class="block mb-2 text-sm font-medium text-white text-center">Seleccione el Medio 2</label>
+                    <select id="medium2" class="bg-gray-700 border border-gray-600 text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-900 dark:border-gray-800 dark:placeholder-gray-500 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value="300000">Vacío</option>
+                        <option value="299910">Aire</option>
+                        <option value="225564">Agua</option>
+                        <option value="220588">Etanol</option>
+                        <option value="205479">Cuarzo</option>
+                        <option value="197368">Vidrio crown</option>
+                        <option value="186335">Vidrio flint</option>
+                        <option value="123967">Diamante</option>
+                    </select>
+                </form>
+                <div class="mb-6">
+                    <label for="angleInput" class="block mb-2 text-sm font-medium text-white text-center">Ingrese el Ángulo de Incidencia (en grados)</label>
+                    <input id="angleInput" type="number" step="0.01" class="bg-gray-700 border border-gray-600 text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-900 dark:border-gray-800 dark:placeholder-gray-500 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                </div>
+                <div class="mb-6 text-center">
+                    <p id="reflectionAngle" class="text-white text-lg font-semibold">Ángulo de Reflexión: </p>
+                    <p id="refractionAngle" class="text-white text-lg font-semibold">Ángulo de Refracción: </p>
+                </div>
+            </div>
+            <div class="w-full md:w-2/3 px-4 flex justify-center items-center">
+                <canvas id="refractionChart" width="400" height="400" style="max-width: 100%; border-radius: 8px;"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const ctx = document.getElementById('refractionChart').getContext('2d');
+    
+    const medium1Select = document.getElementById('medium1');
+    const medium2Select = document.getElementById('medium2');
+    const angleInput = document.getElementById('angleInput');
+    const reflectionAngleOutput = document.getElementById('reflectionAngle');
+    const refractionAngleOutput = document.getElementById('refractionAngle');
+
+    let chart;
+
+    function calculateAngles() {
+        const speed1 = parseFloat(medium1Select.value);
+        const speed2 = parseFloat(medium2Select.value);
+        const incidentAngle = parseFloat(angleInput.value);
+
+        const incidentAngleRadians = (incidentAngle * Math.PI) / 180;
+        const refractionAngleRadians = Math.asin((speed2 / speed1) * Math.sin(incidentAngleRadians));
+
+        const reflectionAngle = incidentAngle;  // Ángulo de reflexión es igual al de incidencia
+        const refractionAngle = (isNaN(refractionAngleRadians) ? 'N/A' : (refractionAngleRadians * 180) / Math.PI);  // Convertir a grados si es válido
+
+        reflectionAngleOutput.textContent = `Ángulo de Reflexión: ${reflectionAngle.toFixed(2)}°`;
+        refractionAngleOutput.textContent = `Ángulo de Refracción: ${refractionAngle !== 'N/A' ? refractionAngle.toFixed(2) + '°' : 'N/A'}`;
+
+        updateChart(incidentAngle, reflectionAngle, refractionAngle);
+    }
+
+    function updateChart(incidentAngle, reflectionAngle, refractionAngle) {
+        if (chart) {
+            chart.destroy();  // Destruye la gráfica existente antes de crear una nueva
+        }
+        
+        chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Incidente', 'Reflejado', 'Refractado'],
+                datasets: [{
+                    label: 'Ángulos en Grados',
+                    data: [incidentAngle, reflectionAngle, refractionAngle !== 'N/A' ? refractionAngle : null],
+                    backgroundColor: 'rgba(0, 0, 0, 0)',  // Fondo transparente
+                    borderColor: [
+                        'rgba(255, 255, 255, 1)',  // Color blanco para las líneas
+                    ],
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(255, 255, 255, 1)',  // Puntos blancos
+                    pointBorderColor: 'rgba(255, 255, 255, 1)',
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 360,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.2)',  // Líneas de la cuadrícula en blanco con transparencia
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 1)',  // Color blanco para los números en el eje Y
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.2)',  // Líneas de la cuadrícula en blanco con transparencia
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 1)',  // Color blanco para los números en el eje X
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'rgba(255, 255, 255, 1)'  // Color blanco para la leyenda
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    medium1Select.addEventListener('change', calculateAngles);
+    medium2Select.addEventListener('change', calculateAngles);
+    angleInput.addEventListener('input', calculateAngles);
+
+    calculateAngles();  // Inicializar gráfica con valores por defecto
+});
+</script>

@@ -34,7 +34,8 @@
         "DESCRIPTION_2_THEME_2" : "For example, when light passes from air into water, it slows down and bends toward the normal (an imaginary line perpendicular to the separating surface). This change in the direction of light is what causes objects to appear distorted when they are submerged in water."
     },
     "SIMULATOR" : {
-        "TITLE" : "Simulator",
-        "DESCRIPTION" : "Refraction and Light Refraction Simulator developed by Alonso David De León Rodarte, Registration 2173878, CAREER: IAS FIME 2024"
+        "TITLE_PAGE" : "Simulator",
+        "DESCRIPTION" : "Refraction and Light Refraction Simulator developed by Alonso David De León Rodarte, Registration 2173878, CAREER: IAS FIME 2024",
+        "TITLE" : "Refraction and Light Refraction Simulator"
     }
 }

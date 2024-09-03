@@ -20,6 +20,7 @@ const lang = getLangFromUrl(Astro.url);
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
 		<link rel="icon" href="/logo-fime.ico" />
 		<title>{title}</title>
@@ -96,6 +97,24 @@ const lang = getLangFromUrl(Astro.url);
 			}
 			footer {
 				background-color: #13151a
+			}
+			#intro-simulador{
+				display: flex;
+				width: auto;
+				height: auto;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				min-height: 100vh;
+				background-image: linear-gradient(
+					rgba(0,0,0,0.8),
+					rgba(0,0,0,0.8)),
+					url(/public/img//SimuladorBg.jpg);
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-attachment: fixed;
+					clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 			}
 			#intro-marco {
 				display: flex;

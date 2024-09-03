@@ -36,7 +36,8 @@
         "DESCRIPTION_2_THEME_2" : "Por ejemplo, cuando la luz pasa del aire al agua, se ralentiza y se desvía hacia la normal (una línea imaginaria perpendicular a la superficie de separación). Este cambio en la dirección de la luz es lo que causa que los objetos se vean distorsionados cuando están sumergidos en agua."
     },    
     "SIMULATOR" : {
-        "TITLE" : "Simulador",
-        "DESCRIPTION": "Simulador de la Reflexión y Refracción de la Luz desarrollado por Alonso David De León Rodarte, Matrícula 2173878, CARRERA: IAS FIME 2024"
+        "TITLE_PAGE" : "Simulador",
+        "DESCRIPTION": "Simulador de la Reflexión y Refracción de la Luz desarrollado por Alonso David De León Rodarte, Matrícula 2173878, CARRERA: IAS FIME 2024",
+        "TITLE" : "Simulador de Reflexión y Refracción"
     }
 }
