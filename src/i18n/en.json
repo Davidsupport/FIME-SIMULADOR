@@ -36,6 +36,20 @@
     "SIMULATOR" : {
         "TITLE_PAGE" : "Simulator",
         "DESCRIPTION" : "Refraction and Light Refraction Simulator developed by Alonso David De León Rodarte, Registration 2173878, CAREER: IAS FIME 2024",
-        "TITLE" : "Refraction and Light Refraction Simulator"
+        "TITLE" : "Refraction and Light Refraction Simulator",
+        "OPTION_1" : "Select Media 1",
+        "OPTION_2" : "Select Media 2",
+        "ANGLE_INCIDENCE" : "Enter the Angle of Incidence (in degrees)",
+        "RESULTS_1" : "Angle of Reflection:",
+        "RESULTS_2" : "Angle of Refraction:",
+        "CHART" : {
+            "TITLE" : "Angle in Degrees"
+        },
+        "COMBOBOX" : { 
+            "OPTION_1" : "Empty",
+            "OPTION_2" : "Air",
+            "OPTION_3" : "Water",
+            "OPTION_4" : "Ethanol"
+        }
     }
 }
