@@ -2,58 +2,62 @@
     "SEO_TITLE": "Light Reflection and Refraction Simulator",
     "SEO_MARCO_TITLE": "Theoretical Framework",
     "SEO_DESCRIPTION": "Refraction and Light Refraction Simulator developed by Alonso David De León Rodarte, Registration 2173878, CAREER: IAS FIME 2024",
-    "SEO_MARCO_DESCRIPTION" : "Theoretical framework on reflection and refraction in physics",
+    "SEO_MARCO_DESCRIPTION": "Theoretical framework on reflection and refraction in physics",
     "INTRO_TITLE": "Welcome to the Simulator of",
-    "INTRO_TITLE_AFTER_BR":"Reflection and Refraction of Light",
+    "INTRO_TITLE_AFTER_BR": "Reflection and Refraction of Light",
     "DESCRIPTION_TITLE": "Description",
     "DESCRIPTION_PARAGRAPH": "Discover the fascinating world of optics with our Refraction and Reflection of Light Simulator! This interactive simulator, developed in HTML, CSS, and JavaScript with Astro, allows you to experiment with how light behaves when interacting with different mediums.",
-    "DESCRIPTION_FEATURES" : "Key Features:",
-    "DSCRIPTION_LIST_1" : "Intuitive Interface:",
-    "DESCRIPTION_LIST_1_BODY" : "Designed with HTML and CSS, the simulator features a clear and user-friendly interface that makes it easy to visualize optical concepts." ,
-    "DSCRIPTION_LIST_2" : "Dynamics Simulation:",
-    "DESCRIPTION_LIST_2_BODY" : "Using JavaScript, the simulator allows you to adjust variables such as the angle of incidence and refractive indices, showing in real-time how light refracts and reflects as it passes through different media.",
-    "DESCRIPTION_LIST_3" : "Graphical Visualization:",
-    "DESCRIPTION_LIST_3_BODY" : "Thanks to interactive graphics, you can observe how light behaves when crossing boundaries between different materials, learning about Snell's laws and reflection in the process.",
+    "DESCRIPTION_FEATURES": "Key Features:",
+    "DSCRIPTION_LIST_1": "Intuitive Interface:",
+    "DESCRIPTION_LIST_1_BODY": "Designed with HTML and CSS, the simulator features a clear and user-friendly interface that makes it easy to visualize optical concepts.",
+    "DSCRIPTION_LIST_2": "Dynamics Simulation:",
+    "DESCRIPTION_LIST_2_BODY": "Using JavaScript, the simulator allows you to adjust variables such as the angle of incidence and refractive indices, showing in real-time how light refracts and reflects as it passes through different media.",
+    "DESCRIPTION_LIST_3": "Graphical Visualization:",
+    "DESCRIPTION_LIST_3_BODY": "Thanks to interactive graphics, you can observe how light behaves when crossing boundaries between different materials, learning about Snell's laws and reflection in the process.",
     "DESCRIPTION_LIST_4": "Optimized with Astro:",
     "DESCRIPTION_LIST_4_BODY": "The use of Astro ensures that the simulator is lightweight and fast, providing a smooth user experience without compromising performance.",
-    "DESCRIPTION_LIST_5" : "Educational and Engaging:",
+    "DESCRIPTION_LIST_5": "Educational and Engaging:",
     "DESCRIPTION_LIST_5_BODY": "Ideal for students and physics enthusiasts, the simulator combines education and entertainment, making it easier to understand complex optical phenomena in a visual and practical way.",
     "DESCRIPTION_END": "Immerse yourself in the world of optics and experience how light travels through different media with our innovative simulator!",
-    "FOOTER" : {
-        "FIRST_HEADER" : "Resources",
-        "SECOND_HEADER":  "Follow me"
+    "FOOTER": {
+        "FIRST_HEADER": "Resources",
+        "SECOND_HEADER": "Follow me"
     },
-    "FOOTER_IMG_TITLE" : "FIME",
-    "INTRO_MARCO_TITLE" : "What is Reflection and Refraction?",
-    "MARCO" : {
-        "TITLE" : "What is Reflection and Refraction?",
+    "FOOTER_IMG_TITLE": "FIME",
+    "INTRO_MARCO_TITLE": "What is Reflection and Refraction?",
+    "MARCO": {
+        "TITLE": "What is Reflection and Refraction?",
         "THEME_TITLE_1": "Reflection: ",
         "THEME_TITLE_2": "Refraction: ",
-        "DESCRIPTION_THEME_1":"Reflection occurs when a wave, upon reaching the boundary between two media, bounces back into the original medium. This phenomenon is what allows us to see images in a mirror or hear an echo. The fundamental law of reflection states that the angle of incidence (the angle between the incident wave and the normal to the surface) is equal to the angle of reflection (the angle between the reflected wave and the normal).",
-        "DESCRIPTION_THEME_2" : "Refraction is an optical phenomenon that occurs when a wave, such as light, passes from one medium to another with a different density. When passing through the interface between the two media, the speed of the wave changes, which causes its direction to also change.",
-        "DESCRIPTION_2_THEME_2" : "For example, when light passes from air into water, it slows down and bends toward the normal (an imaginary line perpendicular to the separating surface). This change in the direction of light is what causes objects to appear distorted when they are submerged in water."
+        "DESCRIPTION_THEME_1": "Reflection occurs when a wave, upon reaching the boundary between two media, bounces back into the original medium. This phenomenon is what allows us to see images in a mirror or hear an echo. The fundamental law of reflection states that the angle of incidence (the angle between the incident wave and the normal to the surface) is equal to the angle of reflection (the angle between the reflected wave and the normal).",
+        "DESCRIPTION_THEME_2": "Refraction is an optical phenomenon that occurs when a wave, such as light, passes from one medium to another with a different density. When passing through the interface between the two media, the speed of the wave changes, which causes its direction to also change.",
+        "DESCRIPTION_2_THEME_2": "For example, when light passes from air into water, it slows down and bends toward the normal (an imaginary line perpendicular to the separating surface). This change in the direction of light is what causes objects to appear distorted when they are submerged in water."
     },
-    "SIMULATOR" : {
-        "TITLE_PAGE" : "Simulator",
-        "DESCRIPTION" : "Refraction and Light Refraction Simulator developed by Alonso David De León Rodarte, Registration 2173878, CAREER: IAS FIME 2024",
-        "TITLE" : "Refraction and Light Refraction Simulator",
-        "OPTION_1" : "Select Media 1",
-        "OPTION_2" : "Select Media 2",
-        "ANGLE_INCIDENCE" : "Enter the Angle of Incidence (in degrees)",
-        "RESULTS_1" : "Angle of Reflection:",
-        "RESULTS_2" : "Angle of Refraction:",
-        "CHART" : {
-            "TITLE" : "Angle in Degrees"
+    "SIMULATOR": {
+        "TITLE_PAGE": "Simulator",
+        "DESCRIPTION": "Refraction and Light Refraction Simulator developed by Alonso David De León Rodarte, Registration 2173878, CAREER: IAS FIME 2024",
+        "TITLE": "Refraction and Light Refraction Simulator",
+        "OPTION_1": "Select Media 1",
+        "OPTION_2": "Select Media 2",
+        "ANGLE_INCIDENCE": "Enter the Angle of Incidence (in degrees)",
+        "RESULTS_1": "Angle of Reflection:",
+        "RESULTS_2": "Angle of Refraction:",
+        "CHART": {
+            "TITLE": "Angle in Degrees"
         },
-        "COMBOBOX" : { 
-            "OPTION_1" : "Empty",
-            "OPTION_2" : "Air",
-            "OPTION_3" : "Water",
-            "OPTION_4" : "Ethanol"
+        "COMBOBOX": {
+            "OPTION_1": "Empty",
+            "OPTION_2": "Air",
+            "OPTION_3": "Water",
+            "OPTION_4": "Ethanol",
+            "OPTION_5": "Quartz",
+            "OPTION_6": "Crown Glass",
+            "OPTION_7": "Flint Glass",
+            "OPTION_8": "Diamond"
         },
-        "NOTE" : {
-            "NOTE_TITLE" : "Note:",
-            "NOTE_DESCRPTION" : "If the graph is not displayed in the simulator, please refresh the page."
+        "NOTE": {
+            "NOTE_TITLE": "Note:",
+            "NOTE_DESCRPTION": "If the graph is not displayed in the simulator, please refresh the page."
         }
     }
 }

@@ -1,61 +1,65 @@
 {
-    "HEADER_OPTION_1" : "Marco Teórico",
-    "HEADER_OPTION_2" : "Simulador",
-    "HEADER_OPTION_3" : "Integrantes del Equipo",
+    "HEADER_OPTION_1": "Marco Teórico",
+    "HEADER_OPTION_2": "Simulador",
+    "HEADER_OPTION_3": "Integrantes del Equipo",
     "SEO_TITLE": "Simulador de la Reflexión y Refracción de la Luz",
     "SEO_MARCO_TITLE": "Marco Teórico",
     "SEO_DESCRIPTION": "Simulador de la Reflexión y Refracción de la Luz desarrollado por Alonso David De León Rodarte, Matrícula 2173878, CARRERA: IAS FIME 2024",
     "INTRO_TITLE": "Bienvenidos/as al Simulador de",
-    "INTRO_TITLE_AFTER_BR":"Refracción y Refracción de la Luz",
+    "INTRO_TITLE_AFTER_BR": "Refracción y Refracción de la Luz",
     "DESCRIPTION_TITLE": "Descripción",
     "DESCRIPTION_PARAGRAPH": "¡Descubre el fascinante mundo de la óptica con nuestro Simulador de Refracción y Reflexión de la Luz! Este simulador interactivo, desarrollado en HTML, CSS y JavaScript con Astro, te permite experimentar con la manera en que la luz se comporta al interactuar con diferentes medios.",
-    "DESCRIPTION_FEATURES" : "Características Clave:",
-    "DSCRIPTION_LIST_1" : "Interfaz Intuitiva:",
-    "DESCRIPTION_LIST_1_BODY" : "Diseñado con HTML y CSS, el simulador presenta una interfaz clara y fácil de usar que facilita la visualización de conceptos ópticos.",
-    "DSCRIPTION_LIST_2" : "Simulación Dinámica:",
-    "DESCRIPTION_LIST_2_BODY" : "Utilizando JavaScript, el simulador permite ajustar variables como el ángulo de incidencia y los índices de refracción, mostrando en tiempo real cómo la luz se refracta y refleja al atravesar distintos medios.",
-    "DESCRIPTION_LIST_3" : "Visualización Gráfica:",
-    "DESCRIPTION_LIST_3_BODY" : "Gracias a gráficos interactivos, puedes observar cómo la luz se comporta al cruzar límites entre diferentes materiales, aprendiendo sobre las leyes de Snell y la reflexión en el proceso.",
-    "DESCRIPTION_LIST_4" : "Optimizado con Astro:",
-    "DESCRIPTION_LIST_4_BODY" : "El uso de Astro asegura que el simulador sea ligero y rápido, proporcionando una experiencia de usuario fluida sin comprometer el rendimiento.",
-    "DESCRIPTION_LIST_5" : "Educativo y Atractivo:",
-    "DESCRIPTION_LIST_5_BODY" : "Ideal para estudiantes y entusiastas de la física, el simulador combina educación y entretenimiento, facilitando la comprensión de fenómenos ópticos complejos de manera visual y práctica.",
+    "DESCRIPTION_FEATURES": "Características Clave:",
+    "DSCRIPTION_LIST_1": "Interfaz Intuitiva:",
+    "DESCRIPTION_LIST_1_BODY": "Diseñado con HTML y CSS, el simulador presenta una interfaz clara y fácil de usar que facilita la visualización de conceptos ópticos.",
+    "DSCRIPTION_LIST_2": "Simulación Dinámica:",
+    "DESCRIPTION_LIST_2_BODY": "Utilizando JavaScript, el simulador permite ajustar variables como el ángulo de incidencia y los índices de refracción, mostrando en tiempo real cómo la luz se refracta y refleja al atravesar distintos medios.",
+    "DESCRIPTION_LIST_3": "Visualización Gráfica:",
+    "DESCRIPTION_LIST_3_BODY": "Gracias a gráficos interactivos, puedes observar cómo la luz se comporta al cruzar límites entre diferentes materiales, aprendiendo sobre las leyes de Snell y la reflexión en el proceso.",
+    "DESCRIPTION_LIST_4": "Optimizado con Astro:",
+    "DESCRIPTION_LIST_4_BODY": "El uso de Astro asegura que el simulador sea ligero y rápido, proporcionando una experiencia de usuario fluida sin comprometer el rendimiento.",
+    "DESCRIPTION_LIST_5": "Educativo y Atractivo:",
+    "DESCRIPTION_LIST_5_BODY": "Ideal para estudiantes y entusiastas de la física, el simulador combina educación y entretenimiento, facilitando la comprensión de fenómenos ópticos complejos de manera visual y práctica.",
     "DESCRIPTION_END": "¡Sumérgete en el mundo de la óptica y experimenta cómo la luz viaja a través de diferentes medios con nuestro innovador simulador!",
-    "FOOTER" : {
-        "FIRST_HEADER" : "Recursos",
+    "FOOTER": {
+        "FIRST_HEADER": "Recursos",
         "SECOND_HEADER": "Sigueme"
     },
-    "FOOTER_IMG_TITLE" : "FIME",
-    "INTRO_MARCO_TITLE" : "¿Qué es la Reflexión y la Refracción?",
-    "MARCO" : {
-        "TITLE" : "¿Qué es la reflexión y la refracción?",
+    "FOOTER_IMG_TITLE": "FIME",
+    "INTRO_MARCO_TITLE": "¿Qué es la Reflexión y la Refracción?",
+    "MARCO": {
+        "TITLE": "¿Qué es la reflexión y la refracción?",
         "THEME_TITLE_1": "Reflexión: ",
         "THEME_TITLE_2": "Refracción: ",
-        "DESCRIPTION_THEME_1":"La reflexión ocurre cuando una onda, al llegar a la frontera entre dos medios, rebota y regresa al medio original. Este fenómeno es lo que nos permite ver imágenes en un espejo o escuchar un eco. La ley fundamental de la reflexión establece que el ángulo de incidencia (el ángulo entre la onda incidente y la normal a la superficie) es igual al ángulo de reflexión (el ángulo entre la onda reflejada y la normal).",
-        "DESCRIPTION_THEME_2" : "La refracción es un fenómeno óptico que ocurre cuando una onda, como la luz, pasa de un medio a otro con diferente densidad. Al atravesar la interfaz entre los dos medios, la velocidad de la onda cambia, lo que provoca que su dirección también se modifique.",
-        "DESCRIPTION_2_THEME_2" : "Por ejemplo, cuando la luz pasa del aire al agua, se ralentiza y se desvía hacia la normal (una línea imaginaria perpendicular a la superficie de separación). Este cambio en la dirección de la luz es lo que causa que los objetos se vean distorsionados cuando están sumergidos en agua."
-    },    
-    "SIMULATOR" : {
-        "TITLE_PAGE" : "Simulador",
+        "DESCRIPTION_THEME_1": "La reflexión ocurre cuando una onda, al llegar a la frontera entre dos medios, rebota y regresa al medio original. Este fenómeno es lo que nos permite ver imágenes en un espejo o escuchar un eco. La ley fundamental de la reflexión establece que el ángulo de incidencia (el ángulo entre la onda incidente y la normal a la superficie) es igual al ángulo de reflexión (el ángulo entre la onda reflejada y la normal).",
+        "DESCRIPTION_THEME_2": "La refracción es un fenómeno óptico que ocurre cuando una onda, como la luz, pasa de un medio a otro con diferente densidad. Al atravesar la interfaz entre los dos medios, la velocidad de la onda cambia, lo que provoca que su dirección también se modifique.",
+        "DESCRIPTION_2_THEME_2": "Por ejemplo, cuando la luz pasa del aire al agua, se ralentiza y se desvía hacia la normal (una línea imaginaria perpendicular a la superficie de separación). Este cambio en la dirección de la luz es lo que causa que los objetos se vean distorsionados cuando están sumergidos en agua."
+    },
+    "SIMULATOR": {
+        "TITLE_PAGE": "Simulador",
         "DESCRIPTION": "Simulador de la Reflexión y Refracción de la Luz desarrollado por Alonso David De León Rodarte, Matrícula 2173878, CARRERA: IAS FIME 2024",
-        "TITLE" : "Simulador de Reflexión y Refracción",
-        "OPTION_1" : "Seleccione el Medio 1",
-        "OPTION_2" : "Seleccione el Medio 2",
-        "ANGLE_INCIDENCE" : "Ingrese el Ángulo de Incidencia (en grados)",
-        "RESULTS_1" : "Ángulo de Reflexión:",
-        "RESULTS_2" : "Ángulo de Refracción:",
-        "CHART" : {
-            "TITLE" : "Ángulo en Grados"
+        "TITLE": "Simulador de Reflexión y Refracción",
+        "OPTION_1": "Seleccione el Medio 1",
+        "OPTION_2": "Seleccione el Medio 2",
+        "ANGLE_INCIDENCE": "Ingrese el Ángulo de Incidencia (en grados)",
+        "RESULTS_1": "Ángulo de Reflexión:",
+        "RESULTS_2": "Ángulo de Refracción:",
+        "CHART": {
+            "TITLE": "Ángulo en Grados"
         },
-        "COMBOBOX" : { 
-            "OPTION_1" : "Vació",
-            "OPTION_2" : "Aire",
-            "OPTION_3" : "Agua",
-            "OPTION_4" : "Etanol"
+        "COMBOBOX": {
+            "OPTION_1": "Vació",
+            "OPTION_2": "Aire",
+            "OPTION_3": "Agua",
+            "OPTION_4": "Etanol",
+            "OPTION_5": "Cuarzo,",
+            "OPTION_6": "Vidrio Crown",
+            "OPTION_7": "Vidrio Flint",
+            "OPTION_8": "Diamante"
         },
-        "NOTE" : {
-            "NOTE_TITLE" : "Nota:",
-            "NOTE_DESCRPTION" : "Si no se logra visualizar el gráfico en el simulador, por favor actualice la página."
+        "NOTE": {
+            "NOTE_TITLE": "Nota:",
+            "NOTE_DESCRPTION": "Si no se logra visualizar el gráfico en el simulador, por favor actualice la página."
         }
     }
 }
