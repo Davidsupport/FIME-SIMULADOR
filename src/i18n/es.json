@@ -52,6 +52,10 @@
             "OPTION_2" : "Aire",
             "OPTION_3" : "Agua",
             "OPTION_4" : "Etanol"
+        },
+        "NOTE" : {
+            "NOTE_TITLE" : "Nota:",
+            "NOTE_DESCRPTION" : "Si no se logra visualizar el gráfico en el simulador, por favor actualice la página."
         }
     }
 }

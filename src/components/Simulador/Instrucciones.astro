@@ -1,0 +1,13 @@
+---
+import { getI18N } from "../../i18n"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<div class="w-screen mx-auto text-pretty mt-16 mb-0 py-4 px-4 flex flex-col items-center">
+    <div class="block max-w-sm p-6 rounded-lg bg-gray-900 shadow-2xl">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">{ i18n.SIMULATOR.NOTE.NOTE_TITLE }</h5>
+        <p class="text-white">Si no se logra visualizar el gráfico en el simulador, por favor actualice la página.</p>
+    <div/>
+</div>

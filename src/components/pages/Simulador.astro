@@ -1,7 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Simualdor from "../Simulador/Simualdorintro.astro";
-import SimuladorLogic from "../Simulador/SimuladorLogic.astro";
+import Intro from "../Simulador/Simualdorintro.astro";
+import SimuladorView from "../Simulador/SimuladorView.astro";
+import Instrucciones from "../Simulador/Instrucciones.astro";
 
 import { getI18N } from "../../i18n";
 
@@ -12,6 +13,7 @@ const i18n = getI18N({ currentLocale })
 <Layout
     title={ i18n.SIMULATOR.TITLE }
     description={i18n.SIMULATOR.DESCRIPTION }>
-    <Simualdor />
-    <SimuladorLogic />
+    <Intro />
+    <Instrucciones />
+    <SimuladorView />
 </Layout>
