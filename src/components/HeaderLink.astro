@@ -1,8 +1,8 @@
 ---
 interface Props {
-    checkActive?: boolean
-    href: string
-    class?: string
+    checkActive?: boolean;
+    href: string;
+    class?: string;
 }
 
 const {
@@ -10,20 +10,19 @@ const {
     class: className,
     checkActive = true,
     ...restOfProps
-} = Astro.props
+} = Astro.props;
 
-
-const currentPath = Astro.url.pathname
-const isActive = currentPath === href && checkActive
+const currentPath = Astro.url.pathname;
+const isActive = currentPath === href && checkActive;
 ---
 
 <a
     href={href}
     class:list={[
         className,
-        "border-b-2",
-        isActive ? "border-white" : "border-transparent",
-]}
+        "border-t-8 p-4 uppercase font-semibold",
+        isActive ? "border-green-fime text-green-fime" : "border-transparent",
+    ]}
     {...restOfProps}
 >
     <slot />

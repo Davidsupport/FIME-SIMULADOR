@@ -1,29 +1,29 @@
 {
-  "name": "prueba-astro",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.9.3",
-    "@astrojs/preact": "^3.5.2",
-    "@astrojs/tailwind": "^5.1.0",
-    "@fontsource-variable/onest": "^5.0.5",
-    "astro": "^4.14.6",
-    "chart.js": "^4.4.4",
-    "flowbite": "^2.5.1",
-    "preact": "^10.23.2",
-    "tailwind": "^4.0.0",
-    "tailwindcss": "^3.4.10",
-    "typescript": "^5.5.4",
-    "ws": "^8.18.0"
-  },
-  "devDependencies": {
-    "tailwindcss-animated": "^1.1.2"
-  }
+    "name": "prueba-astro",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/check": "^0.9.3",
+        "@astrojs/preact": "^3.5.2",
+        "@astrojs/tailwind": "^5.1.0",
+        "@fontsource-variable/onest": "^5.0.5",
+        "astro": "^4.14.6",
+        "chart.js": "^4.4.4",
+        "flowbite": "^2.5.1",
+        "preact": "^10.23.2",
+        "tailwind": "^4.0.0",
+        "tailwindcss": "^3.4.10",
+        "typescript": "^5.5.4",
+        "ws": "^8.18.0"
+    },
+    "devDependencies": {
+        "tailwindcss-animated": "^1.1.2"
+    }
 }

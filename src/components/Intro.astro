@@ -1,13 +1,19 @@
 ---
-import { getI18N } from '../i18n/'
-const { currentLocale } = Astro
-const i18n = getI18N({ currentLocale })
+import { getI18N } from "../i18n/";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
-<section id="intro" class="relative z-10 mx-auto text-pretty px-4 sm:px-8 md:px-16 lg:px-20 text-left text-3xl sm:text-6xl md:text-7xl h-screen w-screen">
+<section
+    id="intro"
+    class="relative z-10 mx-auto text-pretty px-4 sm:px-8 md:px-16 lg:px-20 text-left text-3xl sm:text-6xl md:text-7xl h-screen w-screen"
+>
     <div class="mt-[5%] animate-fade-up animate-once animate-delay-[900ms]">
-        <h1 class="mx-auto mb-10 text-wrap text-center font-semibold tracking-wide">
-            {i18n.INTRO_TITLE} <br />
+        <h1
+            class="mx-auto mb-10 text-wrap text-center font-semibold tracking-wide"
+        >
+            {i18n.INTRO_TITLE}
+            <br />
             <span class="text-green-fime">{i18n.INTRO_TITLE_AFTER_BR}</span>
         </h1>
     </div>

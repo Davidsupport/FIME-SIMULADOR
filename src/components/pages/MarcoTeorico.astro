@@ -1,17 +1,18 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Intro from "../Marco/MarcoIntro.astro"
+import Intro from "../Marco/MarcoIntro.astro";
 import MarcoDescription from "../Marco/MarcoDescription.astro";
 
 import { getI18N } from "../../i18n";
 
-const { currentLocale } = Astro
-const i18n = getI18N({ currentLocale })
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <Layout
-    title={ i18n.SIMULATOR.TITLE_PAGE}
-    description={i18n.SIMULATOR.DESCRIPTION }>
+    title={i18n.SIMULATOR.TITLE_PAGE}
+    description={i18n.SIMULATOR.DESCRIPTION}
+>
     <Intro />
     <MarcoDescription />
 </Layout>
