@@ -21,7 +21,9 @@ const isActive = currentPath === href && checkActive;
     class:list={[
         className,
         "p-4 uppercase font-semibold",
-        isActive ? "border-t-8 border-green-fime text-green-fime" : "border-transparent",
+        isActive
+            ? "border-t-8 border-green-fime text-green-fime"
+            : "border-transparent",
     ]}
     {...restOfProps}
 >

@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         ],
                         backgroundColor: "rgba(0, 0, 0, 0)", // Fondo transparente
                         borderColor: [
-                            "#039351", // Color blanco para las líneas
+                            "#039351", // Color para las líneas
                         ],
                         borderWidth: 2,
-                        pointBackgroundColor: "#039351", // Puntos blancos
+                        pointBackgroundColor: "#039351", // Puntos
                         pointBorderColor: "#039351",
                         fill: false,
                     },
@@ -66,27 +66,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 scales: {
                     y: {
                         beginAtZero: true,
-                        max: 360,
+                        max: 90,
                         grid: {
-                            color: "rgba(255, 255, 255, 0.2)", // Líneas de la cuadrícula en blanco con transparencia
+                            color: "rgba(255, 255, 255, 0.2)", // Líneas de la cuadrícula 
                         },
                         ticks: {
-                            color: "rgba(255, 255, 255, 1)", // Color blanco para los números en el eje Y
+                            color: "rgba(255, 255, 255, 1)", // Color para los números en el eje Y
                         },
                     },
                     x: {
                         grid: {
-                            color: "rgba(255, 255, 255, 0.2)", // Líneas de la cuadrícula en blanco con transparencia
+                            color: "rgba(255, 255, 255, 0.2)", // Líneas de la cuadrícula
                         },
                         ticks: {
-                            color: "rgba(255, 255, 255, 1)", // Color blanco para los números en el eje X
+                            color: "rgba(255, 255, 255, 1)", // Color para los números en el eje X
                         },
                     },
                 },
                 plugins: {
                     legend: {
                         labels: {
-                            color: "rgba(255, 255, 255, 1)", // Color blanco para la leyenda
+                            color: "rgba(255, 255, 255, 1)", // Color para la leyenda
                         },
                     },
                 },
