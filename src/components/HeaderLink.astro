@@ -20,8 +20,8 @@ const isActive = currentPath === href && checkActive;
     href={href}
     class:list={[
         className,
-        "border-t-8 p-4 uppercase font-semibold",
-        isActive ? "border-green-fime text-green-fime" : "border-transparent",
+        "p-4 uppercase font-semibold",
+        isActive ? "border-t-8 border-green-fime text-green-fime" : "border-transparent",
     ]}
     {...restOfProps}
 >
