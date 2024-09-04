@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ? "N/A"
             : (refractionAngleRadians * 180) / Math.PI; // Convertir a grados si es válido
 
-        reflectionAngleOutput.textContent = `${reflectionAngle !== "N/A" ? reflectionAngle.toFixed(2) + "°" : "0"}`;
+        reflectionAngleOutput.textContent = `${isNaN(reflectionAngle) ? "0" : reflectionAngle.toFixed(2) + "°"}`;
         refractionAngleOutput.textContent = `${refractionAngle !== "N/A" ? refractionAngle.toFixed(2) + "°" : "0"}`;
 
         updateChart(incidentAngle, reflectionAngle, refractionAngle);
