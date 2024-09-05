@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         beginAtZero: true,
                         max: 90,
                         grid: {
-                            color: "rgba(255, 255, 255, 0.2)", // Líneas de la cuadrícula 
+                            color: "rgba(255, 255, 255, 0.2)", // Líneas de la cuadrícula
                         },
                         ticks: {
                             color: "rgba(255, 255, 255, 1)", // Color para los números en el eje Y
