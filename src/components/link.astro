@@ -1,13 +1,13 @@
 ---
-import { getRelativeLocaleUrl } from "astro:i18n"
+import { getRelativeLocaleUrl } from "astro:i18n";
 
 interface Props {
-    class?: string
-    href: string
+    class?: string;
+    href: string;
 }
 
-const { currentLocale = "es" } = Astro
-const { href, class: className } = Astro.props
+const { currentLocale = "es" } = Astro;
+const { href, class: className } = Astro.props;
 ---
 
 <a href={href} class:list={[className]}>
