@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import LanguageSelector from "./LanguageSelector.astro";
 import HeaderLink from "./HeaderLink.astro";
 import CloseIcon from "./icons/Close.astro";
@@ -27,7 +28,12 @@ const translatePath = useTranslatedPath(lang);
             href={translatePath("/")}
             class="relative z-10"
         >
-            <img src={FimeLogo} class="h-auto w-12" alt="Fime" />
+            <Image
+                src={FimeLogo}
+                alt="Factuldad de Ingenieria Mecánica y Eléctrica"
+                width="80"
+                height="100"
+            />
         </HeaderLink>
         <nav
             id="header-menu"

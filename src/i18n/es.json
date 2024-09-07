@@ -60,6 +60,17 @@
         "NOTE": {
             "NOTE_TITLE": "Nota:",
             "NOTE_DESCRPTION": "Si no se logra visualizar el gráfico en el simulador, por favor actualice la página."
+        },
+        "TABLE_1": {
+            "HEADERS": {
+                "HEADER_1": "Tema",
+                "HEADER_2": "Variables",
+                "HEADER_3": "Fórmula"
+            },
+            "ROWS": {
+                "ROW_1": "Reflexión",
+                "ROW_2": "Refracción"
+            }
         }
     }
 }

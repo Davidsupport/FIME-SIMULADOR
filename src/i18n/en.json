@@ -58,6 +58,17 @@
         "NOTE": {
             "NOTE_TITLE": "Note:",
             "NOTE_DESCRPTION": "If the graph is not displayed in the simulator, please refresh the page."
+        },
+        "TABLE_1": {
+            "HEADERS": {
+                "HEADER_1": "Theme",
+                "HEADER_2": "Variable",
+                "HEADER_3": "Formula"
+            },
+            "ROWS": {
+                "ROW_1": "Reflection",
+                "ROW_2": "Refraction"
+            }
         }
     }
 }

@@ -1,0 +1,53 @@
+---
+import { getI18N } from "../../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<div class="relative overflow-x-auto rounded-3xl">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+        <thead
+            class="text-xs text-gray-700 uppercase bg-gray-50 bg-green-fime text-white"
+        >
+            <tr>
+                <th scope="col" class="px-6 py-3 text-center">
+                    {i18n.SIMULATOR.TABLE_1.HEADERS.HEADER_1}
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    {i18n.SIMULATOR.TABLE_1.HEADERS.HEADER_2}
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    {i18n.SIMULATOR.TABLE_1.HEADERS.HEADER_3}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-[#d5f5e3] border-none">
+                <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap text-center"
+                >
+                    {i18n.SIMULATOR.TABLE_1.ROWS.ROW_1}
+                </th>
+                <td class="px-6 py-4 text-center">
+                    &theta;<sub>i</sub> es en rayo de incedencia.
+                    <br />
+                    &theta;<sub>r</sub> es en rayo de reflexión.
+                </td>
+                <td class="px-6 py-4 text-center">
+                    &theta;<sub>i</sub> = &theta;<sub>r</sub>
+                </td>
+            </tr>
+            <tr class="bg-[#d5f5e3] border-none text-center">
+                <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                >
+                    {i18n.SIMULATOR.TABLE_1.ROWS.ROW_2}
+                </th>
+                <td class="px-6 py-4 text-center"> </td>
+                <td class="px-6 py-4 text-center"> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
