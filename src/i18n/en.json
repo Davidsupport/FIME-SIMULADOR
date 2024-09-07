@@ -31,7 +31,19 @@
         "THEME_TITLE_2": "Refraction: ",
         "DESCRIPTION_THEME_1": "Reflection occurs when a wave, upon reaching the boundary between two media, bounces back into the original medium. This phenomenon is what allows us to see images in a mirror or hear an echo. The fundamental law of reflection states that the angle of incidence (the angle between the incident wave and the normal to the surface) is equal to the angle of reflection (the angle between the reflected wave and the normal).",
         "DESCRIPTION_THEME_2": "Refraction is an optical phenomenon that occurs when a wave, such as light, passes from one medium to another with a different density. When passing through the interface between the two media, the speed of the wave changes, which causes its direction to also change.",
-        "DESCRIPTION_2_THEME_2": "For example, when light passes from air into water, it slows down and bends toward the normal (an imaginary line perpendicular to the separating surface). This change in the direction of light is what causes objects to appear distorted when they are submerged in water."
+        "DESCRIPTION_2_THEME_2": "For example, when light passes from air into water, it slows down and bends toward the normal (an imaginary line perpendicular to the separating surface). This change in the direction of light is what causes objects to appear distorted when they are submerged in water.",
+        "TABLE_1": {
+            "HEADERS": {
+                "HEADER_1": "Theme",
+                "HEADER_2": "Variable",
+                "HEADER_3": "Formula"
+            },
+            "ROWS": {
+                "ROW_1": "Reflection",
+                "ROW_2": "Refraction",
+                "ROW_1_1": "is in incidence ray."
+            }
+        }
     },
     "SIMULATOR": {
         "TITLE_PAGE": "Simulator",
@@ -58,17 +70,6 @@
         "NOTE": {
             "NOTE_TITLE": "Note:",
             "NOTE_DESCRPTION": "If the graph is not displayed in the simulator, please refresh the page."
-        },
-        "TABLE_1": {
-            "HEADERS": {
-                "HEADER_1": "Theme",
-                "HEADER_2": "Variable",
-                "HEADER_3": "Formula"
-            },
-            "ROWS": {
-                "ROW_1": "Reflection",
-                "ROW_2": "Refraction"
-            }
         }
     }
 }

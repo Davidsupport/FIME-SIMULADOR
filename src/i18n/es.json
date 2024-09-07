@@ -33,7 +33,19 @@
         "THEME_TITLE_2": "Refracción: ",
         "DESCRIPTION_THEME_1": "La reflexión ocurre cuando una onda, al llegar a la frontera entre dos medios, rebota y regresa al medio original. Este fenómeno es lo que nos permite ver imágenes en un espejo o escuchar un eco. La ley fundamental de la reflexión establece que el ángulo de incidencia (el ángulo entre la onda incidente y la normal a la superficie) es igual al ángulo de reflexión (el ángulo entre la onda reflejada y la normal).",
         "DESCRIPTION_THEME_2": "La refracción es un fenómeno óptico que ocurre cuando una onda, como la luz, pasa de un medio a otro con diferente densidad. Al atravesar la interfaz entre los dos medios, la velocidad de la onda cambia, lo que provoca que su dirección también se modifique.",
-        "DESCRIPTION_2_THEME_2": "Por ejemplo, cuando la luz pasa del aire al agua, se ralentiza y se desvía hacia la normal (una línea imaginaria perpendicular a la superficie de separación). Este cambio en la dirección de la luz es lo que causa que los objetos se vean distorsionados cuando están sumergidos en agua."
+        "DESCRIPTION_2_THEME_2": "Por ejemplo, cuando la luz pasa del aire al agua, se ralentiza y se desvía hacia la normal (una línea imaginaria perpendicular a la superficie de separación). Este cambio en la dirección de la luz es lo que causa que los objetos se vean distorsionados cuando están sumergidos en agua.",
+        "TABLE_1": {
+            "HEADERS": {
+                "HEADER_1": "Tema",
+                "HEADER_2": "Variables",
+                "HEADER_3": "Fórmula"
+            },
+            "ROWS": {
+                "ROW_1": "Reflexión",
+                "ROW_2": "Refracción",
+                "ROW_1_1": "es en rayo de incedencia."
+            }
+        }
     },
     "SIMULATOR": {
         "TITLE_PAGE": "Simulador",
@@ -60,17 +72,6 @@
         "NOTE": {
             "NOTE_TITLE": "Nota:",
             "NOTE_DESCRPTION": "Si no se logra visualizar el gráfico en el simulador, por favor actualice la página."
-        },
-        "TABLE_1": {
-            "HEADERS": {
-                "HEADER_1": "Tema",
-                "HEADER_2": "Variables",
-                "HEADER_3": "Fórmula"
-            },
-            "ROWS": {
-                "ROW_1": "Reflexión",
-                "ROW_2": "Refracción"
-            }
         }
     }
 }
