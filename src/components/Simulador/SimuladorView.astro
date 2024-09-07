@@ -1,12 +1,10 @@
 ---
 import { getI18N } from "../../i18n";
-import SimuladorLogic from "./SimuladorLogic.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
 
-<SimuladorLogic client:load />
 <div
     class="h-screen w-screen mx-auto text-pretty mt-5 mb-0 py-4 px-4 flex flex-col items-center"
 >
@@ -121,4 +119,5 @@ const i18n = getI18N({ currentLocale });
             </div>
         </div>
     </div>
-</div>
+</div>\
+<script src="../Simulador/SimuladorLogis.js"></script>
