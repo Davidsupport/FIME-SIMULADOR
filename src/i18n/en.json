@@ -41,7 +41,8 @@
             "ROWS": {
                 "ROW_1": "Reflection",
                 "ROW_2": "Refraction",
-                "ROW_1_1": "is in incidence ray."
+                "ROW_1_1": "is in incidence ray.",
+                "ROW_2_1": "is in reflection ray."
             }
         }
     },

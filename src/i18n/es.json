@@ -43,7 +43,8 @@
             "ROWS": {
                 "ROW_1": "Reflexión",
                 "ROW_2": "Refracción",
-                "ROW_1_1": "es en rayo de incedencia."
+                "ROW_1_1": "es en rayo de incedencia.",
+                "ROW_2_1": "es en rayo de reflexión."
             }
         }
     },
