@@ -47,7 +47,8 @@
                 "ROW_1": "Reflexión",
                 "ROW_2": "Refracción",
                 "ROW_1_1": "es en rayo de incedencia.",
-                "ROW_2_1": "es en rayo de reflexión."
+                "ROW_2_1": "es en rayo de reflexión.",
+                "ROW_1_2": "Son rayos incidentes de forma perpendicular a la superficie"
             }
         }
     },
