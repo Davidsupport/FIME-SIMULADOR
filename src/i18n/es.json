@@ -23,7 +23,10 @@
     "DESCRIPTION_END": "¡Sumérgete en el mundo de la óptica y experimenta cómo la luz viaja a través de diferentes medios con nuestro innovador simulador!",
     "FOOTER": {
         "FIRST_HEADER": "Recursos",
-        "SECOND_HEADER": "Sigueme"
+        "SECOND_HEADER": "Sigueme",
+        "CONTENT" : {
+            "FIRST_CONTENT" : "Source Code"
+        }
     },
     "FOOTER_IMG_TITLE": "FIME",
     "INTRO_MARCO_TITLE": "¿Qué es la Reflexión y la Refracción?",

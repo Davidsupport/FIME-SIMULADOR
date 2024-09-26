@@ -21,7 +21,10 @@
     "DESCRIPTION_END": "Immerse yourself in the world of optics and experience how light travels through different media with our innovative simulator!",
     "FOOTER": {
         "FIRST_HEADER": "Resources",
-        "SECOND_HEADER": "Follow me"
+        "SECOND_HEADER": "Follow me",
+        "CONTENT" : {
+            "FIRST_CONTENT" : "Source Code"
+        }
     },
     "FOOTER_IMG_TITLE": "FIME",
     "INTRO_MARCO_TITLE": "What is Reflection and Refraction?",
