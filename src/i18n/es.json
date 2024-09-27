@@ -48,7 +48,8 @@
                 "ROW_2": "Refracción",
                 "ROW_1_1": "es en rayo de incedencia.",
                 "ROW_2_1": "es en rayo de reflexión.",
-                "ROW_1_2": "Son rayos incidentes de forma perpendicular a la superficie"
+                "ROW_1_2": "Son rayos incidentes de forma perpendicular a la superficie",
+                "ROW_2_2": "Representa el índice de refracción, que se define como la relación entre la velocidad de la luz en el vacío y la velocidad de la luz en un medio determinado."
             }
         }
     },

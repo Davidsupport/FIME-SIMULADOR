@@ -44,9 +44,10 @@
             "ROWS": {
                 "ROW_1": "Reflection",
                 "ROW_2": "Refraction",
-                "ROW_1_1": "is in incidence ray.",
-                "ROW_2_1": "is in reflection ray.",
-                "ROW_1_2": "They are rays incident perpendicular to the surface"
+                "ROW_1_1": "Is in incidence ray.",
+                "ROW_2_1": "Is in reflection ray.",
+                "ROW_1_2": "They are rays incident perpendicular to the surface",
+                "ROW_2_2": "It represents the refractive index, which is defined as the ratio between the speed of light in vacuum and the speed of light in a given medium."
             }
         }
     },

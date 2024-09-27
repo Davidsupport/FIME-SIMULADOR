@@ -3,7 +3,6 @@ import { getI18N } from "../../i18n";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
-
 <div class="relative overflow-x-auto rounded-3xl">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500">
         <thead
@@ -32,14 +31,14 @@ const i18n = getI18N({ currentLocale });
                 <td
                     class="px-6 py-4 text-center justify-center justify-items-center align-middle"
                 >
-                    &theta;<sub>i</sub>
+                    <span class="font-bold italic text-lg">&theta;<sub>i</sub></span> :
                     {i18n.MARCO.TABLE_1.ROWS.ROW_1_1}
                     <br />
-                    &theta;<sub>r</sub>
+                    <span class="font-bold text-lg italic">&theta;<sub>r</sub></span> :
                     {i18n.MARCO.TABLE_1.ROWS.ROW_2_1}
                 </td>
                 <td
-                    class="px-6 py-4 text-center justify-center justify-items-center align-middle"
+                    class="px-6 py-4 text-center justify-center justify-items-center align-middle italic"
                 >
                     &theta;<sub>i</sub> = &theta;<sub>r</sub>
                 </td>
@@ -54,8 +53,11 @@ const i18n = getI18N({ currentLocale });
                 <td
                     class="px-6 py-4 text-center justify-center justify-items-center align-middle"
                 >
-                    &theta;
-                    { i18n.MARCO.TABLE_1.ROWS.ROW_1_2 }
+                    <span class="font-bold text-lg italic">&theta;</span> :
+                    {i18n.MARCO.TABLE_1.ROWS.ROW_1_2}
+                    <br />
+                    <span class="font-bold text-base italic">n</span> : 
+                    { i18n.MARCO.TABLE_1.ROWS.ROW_2_2 }
                 </td>
                 <td class="px-6 py-4 text-center">
                     <img
