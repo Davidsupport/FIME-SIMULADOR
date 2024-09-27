@@ -79,5 +79,9 @@
             "NOTE_TITLE": "Nota:",
             "NOTE_DESCRPTION": "Si no se logra visualizar el gráfico en el simulador, por favor actualice la página."
         }
+    },
+    "TEAM" : {
+        "TITLE": "Equipo",
+        "DESCRIPTION" : "Integrantes del equipo desarrollador de esta web."
     }
 }
