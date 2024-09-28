@@ -22,8 +22,8 @@
     "FOOTER": {
         "FIRST_HEADER": "Resources",
         "SECOND_HEADER": "Follow me",
-        "CONTENT" : {
-            "FIRST_CONTENT" : "Source Code"
+        "CONTENT": {
+            "FIRST_CONTENT": "Source Code"
         }
     },
     "FOOTER_IMG_TITLE": "FIME",
@@ -77,9 +77,5 @@
             "NOTE_TITLE": "Note:",
             "NOTE_DESCRPTION": "If the graph is not displayed in the simulator, please refresh the page."
         }
-    },
-    "TEAM" : {
-        "TITLE" : "Team",
-        "DESCRIPTION" : "Members of the development team of this website."
     }
 }

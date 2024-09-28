@@ -24,8 +24,8 @@
     "FOOTER": {
         "FIRST_HEADER": "Recursos",
         "SECOND_HEADER": "Sigueme",
-        "CONTENT" : {
-            "FIRST_CONTENT" : "Codigo Fuente"
+        "CONTENT": {
+            "FIRST_CONTENT": "Codigo Fuente"
         }
     },
     "FOOTER_IMG_TITLE": "FIME",
@@ -79,9 +79,5 @@
             "NOTE_TITLE": "Nota:",
             "NOTE_DESCRPTION": "Si no se logra visualizar el gráfico en el simulador, por favor actualice la página."
         }
-    },
-    "TEAM" : {
-        "TITLE": "Equipo",
-        "DESCRIPTION" : "Integrantes del equipo desarrollador de esta web."
     }
 }
