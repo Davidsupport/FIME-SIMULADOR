@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
             (speed2 / speed1) * Math.sin(incidentAngleRadians)
         );
 
-        const reflectionAngle = incidentAngle; // Ángulo de reflexión es igual al de incidencia
+        const reflectionAngle = incidentAngle; 
         const refractionAngle = isNaN(refractionAngleRadians)
             ? "N/A"
-            : (refractionAngleRadians * 180) / Math.PI; // Convertir a grados si es válido
+            : (refractionAngleRadians * 180) / Math.PI; 
 
         reflectionAngleOutput.textContent = `${isNaN(reflectionAngle) ? "0" : reflectionAngle.toFixed(2) + "°"}`;
         refractionAngleOutput.textContent = `${refractionAngle !== "N/A" ? refractionAngle.toFixed(2) + "°" : "0"}`;
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         refractionAngle
     ) {
         if (chart) {
-            chart.destroy(); // Destruye la gráfica existente antes de crear una nueva
+            chart.destroy();
         }
 
         chart = new Chart(ctx, {
@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
                             reflectionAngle,
                             refractionAngle !== "N/A" ? refractionAngle : null,
                         ],
-                        backgroundColor: "rgba(0, 0, 0, 0)", // Fondo transparente
+                        backgroundColor: "rgba(0, 0, 0, 0)", 
                         borderColor: [
-                            "#039351", // Color para las líneas
+                            "#039351", 
                         ],
                         borderWidth: 2,
-                        pointBackgroundColor: "#039351", // Puntos
+                        pointBackgroundColor: "#039351", 
                         pointBorderColor: "#039351",
                         fill: false,
                     },
@@ -68,25 +68,25 @@ document.addEventListener("DOMContentLoaded", () => {
                         beginAtZero: true,
                         max: 90,
                         grid: {
-                            color: "rgba(255, 255, 255, 0.2)", // Líneas de la cuadrícula
+                            color: "rgba(255, 255, 255, 0.2)", 
                         },
                         ticks: {
-                            color: "rgba(255, 255, 255, 1)", // Color para los números en el eje Y
+                            color: "rgba(255, 255, 255, 1)", 
                         },
                     },
                     x: {
                         grid: {
-                            color: "rgba(255, 255, 255, 0.2)", // Líneas de la cuadrícula
+                            color: "rgba(255, 255, 255, 0.2)", 
                         },
                         ticks: {
-                            color: "rgba(255, 255, 255, 1)", // Color para los números en el eje X
+                            color: "rgba(255, 255, 255, 1)", 
                         },
                     },
                 },
                 plugins: {
                     legend: {
                         labels: {
-                            color: "rgba(255, 255, 255, 1)", // Color para la leyenda
+                            color: "rgba(255, 255, 255, 1)",
                         },
                     },
                 },
@@ -97,5 +97,5 @@ document.addEventListener("DOMContentLoaded", () => {
     medium2Select.addEventListener("change", calculateAngles);
     angleInput.addEventListener("input", calculateAngles);
 
-    calculateAngles(); // Inicializar gráfica con valores por defecto
+    calculateAngles();
 });
