@@ -1,0 +1,23 @@
+---
+import { getI18N } from "../../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<section>
+    <p>
+        { i18n.MARCO.DESCRIPTION_3_CHANNEL }
+    </p>
+    <div class="relative pb-[56.25%] h-0 overflow-hidden max-w-full bg-black mt-6 rounded-xl">
+        <iframe
+            src="https://www.youtube.com/embed/FlfxwjOmssA"
+            title="Canal del Dr. Josue Amilcar Aguilar Martinez"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="absolute top-0 left-0 w-full h-full"
+        >
+        </iframe>
+    </div>
+    
+</section>

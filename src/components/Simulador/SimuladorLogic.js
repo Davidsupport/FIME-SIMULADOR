@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 scales: {
                     y: {
                         beginAtZero: true,
-                        max: 90,
+                        max: 360,
                         grid: {
                             color: "rgba(255, 255, 255, 0.2)", 
                         },

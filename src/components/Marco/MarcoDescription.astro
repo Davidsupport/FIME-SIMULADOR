@@ -1,5 +1,6 @@
 ---
 import Formulas from "../Marco/FormulasMarco.astro";
+import Recomendaciones from "./RecomendacionesMarco.astro";
 
 import { getI18N } from "../../i18n";
 const { currentLocale } = Astro;
@@ -65,4 +66,9 @@ const i18n = getI18N({ currentLocale });
         Formulas:
     </h2>
     <Formulas />
+    <h2
+        class="text-4xl font-semibold text-center text-wrap mx-auto mb-10 tracking-wide mt-8">
+        { i18n.FOOTER.THIRD_HEADER }
+    </h2>
+    <Recomendaciones />
 </section>
