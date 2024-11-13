@@ -60,6 +60,10 @@
         "DESCRIPTION": "Simulador de la Reflexión y Refracción de la Luz desarrollado por Alonso David De León Rodarte, Matrícula 2173878, CARRERA: IAS FIME 2024",
         "TITLE": "Simulador de Reflexión y Refracción",
         "OPTION_1": "Seleccione el Medio 1",
+        "TITLE_OPTIONS" : {
+            "OPTION_1" : "Medio 1",
+            "OPTION_2" : "Medio 2"
+        },
         "OPTION_2": "Seleccione el Medio 2",
         "ANGLE_INCIDENCE": "Ingrese el Ángulo de Incidencia (en grados)",
         "RESULTS_1": "Ángulo de Reflexión:",

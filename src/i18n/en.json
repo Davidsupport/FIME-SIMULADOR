@@ -59,6 +59,10 @@
         "TITLE": "Refraction and Light Refraction Simulator",
         "OPTION_1": "Select Media 1",
         "OPTION_2": "Select Media 2",
+        "TITLE_OPTIONS" : {
+            "OPTION_1" : "Media 1",
+            "OPTION_2" : "Media 2"
+        },
         "ANGLE_INCIDENCE": "Enter the Angle of Incidence (in degrees)",
         "RESULTS_1": "Angle of Reflection:",
         "RESULTS_2": "Angle of Refraction:",
