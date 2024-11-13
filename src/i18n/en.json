@@ -78,6 +78,9 @@
         "NOTE": {
             "NOTE_TITLE": "Note:",
             "NOTE_DESCRPTION": "If the graph is not displayed in the simulator, please refresh the page."
+        },
+        "DATA" : {
+            "DATA_TITLE" : "Data:"
         }
     }
 }
