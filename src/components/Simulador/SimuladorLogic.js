@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const speed2 = parseFloat(medium2Select.value);
         const incidentAngle = parseFloat(angleInput.value);
 
-        const criticalAngle = Math.asin(speed2 / speed1) * 180 / Math.PI;
-        
+        const criticalAngle = (Math.asin(speed2 / speed1) * 180) / Math.PI;
+
         const incidentAngleRadians = (incidentAngle * Math.PI) / 180;
         const refractionAngleRadians = Math.asin(
             (speed2 / speed1) * Math.sin(incidentAngleRadians)
@@ -25,18 +25,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cosIncident = Math.cos(incidentAngleRadians);
         const cosRefraction = Math.cos(refractionAngleRadians);
-        
+
         let reflectance = 0;
         let transmittance = 0;
 
-        const hasTotalInternalReflection = speed1 > speed2 && incidentAngle > criticalAngle;
+        const hasTotalInternalReflection =
+            speed1 > speed2 && incidentAngle > criticalAngle;
 
         if (!hasTotalInternalReflection && !isNaN(refractionAngleRadians)) {
-            const rs = Math.pow((speed1 * cosIncident - speed2 * cosRefraction) / 
-                              (speed1 * cosIncident + speed2 * cosRefraction), 2);
-            const rp = Math.pow((speed2 * cosIncident - speed1 * cosRefraction) /
-                              (speed2 * cosIncident + speed1 * cosRefraction), 2);
-            
+            const rs = Math.pow(
+                (speed1 * cosIncident - speed2 * cosRefraction) /
+                    (speed1 * cosIncident + speed2 * cosRefraction),
+                2
+            );
+            const rp = Math.pow(
+                (speed2 * cosIncident - speed1 * cosRefraction) /
+                    (speed2 * cosIncident + speed1 * cosRefraction),
+                2
+            );
+
             reflectance = (rs + rp) / 2;
             transmittance = 1 - reflectance;
         } else {
@@ -51,17 +58,34 @@ document.addEventListener("DOMContentLoaded", () => {
                 ? "N/A"
                 : (refractionAngleRadians * 180) / Math.PI;
 
-        reflectionAngleOutput.textContent = `${reflectionAngle.toFixed(2)}° (R: ${(reflectance * 100).toFixed(1)}%)`;
-        refractionAngleOutput.textContent = refractionAngle !== "N/A" 
-            ? `${refractionAngle.toFixed(2)}° (T: ${(transmittance * 100).toFixed(1)}%)` 
-            : "Reflexión Total Interna";
+        reflectionAngleOutput.textContent = `${reflectionAngle.toFixed(
+            2
+        )}° (R: ${(reflectance * 100).toFixed(1)}%)`;
+        refractionAngleOutput.textContent =
+            refractionAngle !== "N/A"
+                ? `${refractionAngle.toFixed(2)}° (T: ${(
+                      transmittance * 100
+                  ).toFixed(1)}%)`
+                : "Reflexión Total Interna";
         medio1Output.textContent = `${speed1}`;
         medio2Output.textContent = `${speed2}`;
 
-        updateChart(incidentAngle, reflectionAngle, refractionAngle, reflectance, transmittance);
+        updateChart(
+            incidentAngle,
+            reflectionAngle,
+            refractionAngle,
+            reflectance,
+            transmittance
+        );
     }
 
-    function updateChart(incidentAngle, reflectionAngle, refractionAngle, reflectance, transmittance) {
+    function updateChart(
+        incidentAngle,
+        reflectionAngle,
+        refractionAngle,
+        reflectance,
+        transmittance
+    ) {
         if (chart) {
             chart.destroy();
         }
@@ -153,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         },
                         title: {
                             display: true,
-                            text: "Plano Cartesiano (X)",
+                            text: "Eje (X)",
                         },
                     },
                     y: {
@@ -165,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         },
                         title: {
                             display: true,
-                            text: "Plano Cartesiano (Y)",
+                            text: "Eje (Y)",
                         },
                     },
                 },
@@ -177,17 +201,23 @@ document.addEventListener("DOMContentLoaded", () => {
                     },
                     tooltip: {
                         callbacks: {
-                            label: function(context) {
+                            label: function (context) {
                                 const dataset = context.dataset;
                                 if (dataset.label === "Rayo reflejado") {
-                                    return `${dataset.label} (R: ${(reflectance * 100).toFixed(1)}%)`;
-                                } else if (dataset.label === "Rayo refractado") {
-                                    return `${dataset.label} (T: ${(transmittance * 100).toFixed(1)}%)`;
+                                    return `${dataset.label} (R: ${(
+                                        reflectance * 100
+                                    ).toFixed(1)}%)`;
+                                } else if (
+                                    dataset.label === "Rayo refractado"
+                                ) {
+                                    return `${dataset.label} (T: ${(
+                                        transmittance * 100
+                                    ).toFixed(1)}%)`;
                                 }
                                 return dataset.label;
-                            }
-                        }
-                    }
+                            },
+                        },
+                    },
                 },
             },
         });
