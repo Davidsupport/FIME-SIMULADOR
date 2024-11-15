@@ -86,7 +86,8 @@
             "NOTE_DESCRPTION": "Si no se logra visualizar el gráfico en el simulador, por favor actualice la página."
         },
         "DATA" : {
-            "DATA_TITLE" : "Datos:"
+            "DATA_TITLE" : "Datos:",
+            "DATA_1" : "Interfaz de medios"
         }
     }
 }

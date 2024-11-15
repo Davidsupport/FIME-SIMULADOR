@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const speed2 = parseFloat(medium2Select.value);
         const incidentAngle = parseFloat(angleInput.value);
 
-        const relativeIndex = speed1 / speed2;
         const criticalAngle = Math.asin(speed2 / speed1) * 180 / Math.PI;
         
         const incidentAngleRadians = (incidentAngle * Math.PI) / 180;

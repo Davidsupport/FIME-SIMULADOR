@@ -84,7 +84,8 @@
             "NOTE_DESCRPTION": "If the graph is not displayed in the simulator, please refresh the page."
         },
         "DATA" : {
-            "DATA_TITLE" : "Data:"
+            "DATA_TITLE" : "Data:",
+            "DATA_1" : "Media interface"
         }
     }
 }
