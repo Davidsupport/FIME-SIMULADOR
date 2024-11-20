@@ -23,9 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
             (speed2 / speed1) * Math.sin(incidentAngleRadians)
         );
 
-        const cosIncident = Math.cos(incidentAngleRadians);
-        const cosRefraction = Math.cos(refractionAngleRadians);
-
         let reflectance = 0;
         let transmittance = 0;
 
@@ -34,13 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!hasTotalInternalReflection && !isNaN(refractionAngleRadians)) {
             const rs = Math.pow(
-                (speed1 * cosIncident - speed2 * cosRefraction) /
-                    (speed1 * cosIncident + speed2 * cosRefraction),
+                (speed1 * Math.cos(incidentAngleRadians) -
+                    speed2 * Math.cos(refractionAngleRadians)) /
+                    (speed1 * Math.cos(incidentAngleRadians) +
+                        speed2 * Math.cos(refractionAngleRadians)),
                 2
             );
             const rp = Math.pow(
-                (speed2 * cosIncident - speed1 * cosRefraction) /
-                    (speed2 * cosIncident + speed1 * cosRefraction),
+                (speed2 * Math.cos(incidentAngleRadians) -
+                    speed1 * Math.cos(refractionAngleRadians)) /
+                    (speed2 * Math.cos(incidentAngleRadians) +
+                        speed1 * Math.cos(refractionAngleRadians)),
                 2
             );
 
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
             transmittance = 0;
         }
 
-        const reflectionAngle = incidentAngle;
+        const reflectionAngle = incidentAngle; // Reflexión igual al ángulo de incidencia
         const refractionAngle =
             isNaN(refractionAngleRadians) ||
             Math.abs((speed2 / speed1) * Math.sin(incidentAngleRadians)) > 1
@@ -92,20 +93,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const datasets = [];
 
+        // Rayo de incidencia
         datasets.push({
             label: "Rayo de incidencia",
             data: [
                 { x: 0, y: 0 },
                 {
-                    x: -Math.cos((incidentAngle * Math.PI) / 180),
-                    y: Math.sin((incidentAngle * Math.PI) / 180),
+                    x: -Math.sin((incidentAngle * Math.PI) / 180), // Cambiado a negativo para el cuadrante II
+                    y: Math.cos((incidentAngle * Math.PI) / 180),
                 },
             ],
             borderColor: "#ff0000",
-            showLine: true,
+            showLine: true, 
             borderWidth: 2,
         });
 
+        // Normal
         datasets.push({
             label: "Normal",
             data: [
@@ -118,6 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
             borderWidth: 1,
         });
 
+        // Interfaz de medios
         datasets.push({
             label: "Interfaz de medios",
             data: [
@@ -130,28 +134,15 @@ document.addEventListener("DOMContentLoaded", () => {
             borderWidth: 1,
         });
 
-        datasets.push({
-            label: "Rayo reflejado",
-            data: [
-                { x: 0, y: 0 },
-                {
-                    x: Math.cos((reflectionAngle * Math.PI) / 180),
-                    y: Math.sin((reflectionAngle * Math.PI) / 180),
-                },
-            ],
-            borderColor: `rgba(0, 255, 0, ${reflectance})`,
-            showLine: true,
-            borderWidth: 2,
-        });
-
+        // Rayo refractado
         if (refractionAngle !== "N/A") {
             datasets.push({
                 label: "Rayo refractado",
                 data: [
                     { x: 0, y: 0 },
                     {
-                        x: Math.cos((refractionAngle * Math.PI) / 180),
-                        y: -Math.sin((refractionAngle * Math.PI) / 180),
+                        x: Math.sin((refractionAngle * Math.PI) / 180), // Cambiado a positivo para el cuadrante IV
+                        y: -Math.cos((refractionAngle * Math.PI) / 180), // Cambiado a negativo para el cuadrante IV
                     },
                 ],
                 borderColor: `rgba(0, 0, 255, ${transmittance})`,
